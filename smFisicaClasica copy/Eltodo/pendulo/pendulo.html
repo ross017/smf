@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Péndulo Simple</title>
+    <link rel="stylesheet" href="pendulo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="header">
+        <a class="home-link" href="../inicio/frente.html"><i class='bx bx-home'></i></a>
+        <h1><i class='bx bx-git-branch'></i>Simulador de Péndulo Simple<i class='bx bx-git-merge' ></i></h1>
+    </div>
+    <div id="canvas-container"></div>
+    <div id="controls-container">
+        <div class="control-panel">
+            <h2>Longitud del Péndulo</h2>
+            <input type="range" id="length-slider" min="0.1" max="1" step="0.01">
+            <span class="value" id="length-value">Longitud: 0.2 m</span>
+        </div>
+        <div class="control-panel">
+            <h2>Masa del Péndulo</h2>
+            <input type="range" id="mass-slider" min="0.1" max="1.5" step="0.01">
+            <span class="value" id="mass-value">Masa: 0.5 kg</span>
+        </div>
+        <div class="control-panel">
+            <h2>Gravedad</h2>
+            <input type="range" id="gravity-slider" min="0" max="1" step="0.01">
+            <span class="value" id="gravity-value">Gravedad: 0.4</span>
+        </div>
+        <div class="control-panel">
+            <h2>Fricción</h2>
+            <input type="range" id="friction-slider" min="0" max="1" step="0.01">
+            <span class="value" id="friction-value">Fricción: 0.01</span>
+        </div>
+        <button id="add-mass-button">Agregar Masa</button>
+        <button id="pause-button"><i class='bx bx-pause' ></i></button>
+        <button id="play-button"><i class='bx bx-play' ></i></button>
+    </div>
+    <div id="canvas-container">
+        <canvas id="canvas" width="600" height="400"></canvas>
+        <div id="energia-p"></div>
+        <div id="energia-w"></div>
+      <!--<div id="energia-c"></div> comentada porque lit ni me suma ni me resta, preguntar al profesor que haria en ese caso. --> 
+        <div id="energia-t"></div>
+        <div id="energias">
+            <!--<p><i class='bx bxs-circle' style='color:#2684d9'  ></i>E. Potencial <span>0.00</span><br> 
+                <i class='bx bxs-circle' style='color:#d92626'  ></i>E. Cinetica <span>0.00</span><br> 
+                <i class='bx bxs-circle' style='color:#7626d9'  ></i>E.Total <span>0.00</span>
+            </p> -->
+        </div>
+    </div>
+
+    <script src="pendulo.js"></script>
+</body>
+</html>

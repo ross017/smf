@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+  }
+  button {
+    margin: 20px;
+    padding: 10px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  #pausar{
+    
+    left: 43%;
+  }
+  #reiniciar {
+    left: 50%;
+  }
+  h1 {
+    position: absolute;
+    top: 10px;
+    left: 32%;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+
+  }
+  a {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}

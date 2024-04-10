@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="tiroParabolico.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Tiro parabolico</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../inicio/frente.html"><i class='bx bx-arrow-back'></i></a>
+    <h1><i class='bx bxs-rocket' style='color:#2555d9'  ></i> Lanzamiento de un proyectil <i class='bx bx-rocket' style='color:#2555d9' ></i></i></h1>
+    <canvas id="canvas"></canvas>
+    <div class="controls">
+      <label for="masa">Masa del proyectil:</label>
+      <input type="range" id="masa" min="10" max="200" value="23.43">
+      <label for="fuerza">Fuerza de lanzamiento:</label>
+      <input type="range" id="fuerza" min="1" max="100" value="12.00">
+      <label for="launchAngle">Ángulo de lanzamiento:</label>
+      <input type="range" id="launchAngle" min="0" max="90" value="45">
+      <button id="lanzarProyectil">Ininiar</button>
+      <button id="reiniciar">Reiniciar</button>
+      <div id="distanciaLabel">Distancia recorrida: 0 m</div>
+    </div>
+    <div id="flecha"></div>
+ <div id="grados">
+     <!--<div><span id="grados">0</span></div>-->
+ </div>
+ <div id="flecha-acostada"></div>    
+  </div>
+  <script src="tiroParabolico.js"> </script>
+</body>
+</html>
+    
